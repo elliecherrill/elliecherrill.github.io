@@ -6,7 +6,80 @@
 }
 
 .about-me {
-  font-size: 35px;
+  font-size: 25px;
   font-family: Helvetica;
   text-align: left;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 10px solid #000;
+    margin-right: 1350px;
+    padding: 0;
+}
+
+.header {
+  margin-bottom: 25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+
+  /* typographic styles */
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica;
+
+  /* position the text centrally*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* hide the title by default */
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.section-image {
+  line-height: 0;
+}
+
+.section:hover .section-title {
+  opacity: 1;
+}
+
+.section-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.section:hover .section-image img {
+  filter: blur(2px);
+  opacity: 0.5;
 }
