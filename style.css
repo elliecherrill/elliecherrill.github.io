@@ -1,4 +1,4 @@
-.name {
+.title {
   font-weight: bold;
   font-size: 50px;
   font-family: Helvetica;
@@ -38,6 +38,7 @@ img {
 .section {
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 .section-title {
@@ -90,7 +91,7 @@ img {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 2; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #4DD0E1;
@@ -159,4 +160,8 @@ img {
 
   /* Support for IE. */
   font-feature-settings: 'liga';
+}
+
+.menu:hover {
+  color: #4DD0E1;
 }
