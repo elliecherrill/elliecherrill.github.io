@@ -165,3 +165,33 @@ img {
 .menu:hover {
   color: #4DD0E1;
 }
+
+.carousel {
+  margin-top: 20px;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-container {
+  margin: 100px;
+}
+
+.carousel-background {
+  background-color: #4DD0E1;
+}
+
+.carousel-caption h5 {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: Helvetica;
+  color: white;
+}
+
+.carousel-caption p {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Helvetica;
+  color: white;
+}
