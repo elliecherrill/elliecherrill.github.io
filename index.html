@@ -1,82 +1,236 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ellie Cherrill</title>
+    <!-- CSS AND JS-->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <!-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- FONTS -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> -->
+  </head>
 
-<head>
-  <!-- <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-  <link href="style.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  <script src="navBar.js"></script>
-</head>
-
-
-<div id="sideNavBar" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html"><i class="material-icons">home</i>  Home</a>
-  <a href="education.html"><i class="material-icons">school</i>  Education</a>
-  <a href="projects.html"><i class="material-icons">library_books</i>  Projects</a>
-  <a href="work-experience.html"><i class="material-icons">work</i>  Work Experience</a>
-</div>
-
-<body>
-  <div class="header">
-    <span onclick="openNav()" class="menu">
-      <i class="material-icons">
-        menu
-      </i>
-    </span>
-    <h1 class="title">
-      Ellie Cherrill
-    </h1>
-    <p class="about-me">
-      Final Year Computing Student at Imperial College London.
-    </p>
-    <hr/>
-  </div>
-
-  <div class="grid-container">
-    <div class="section">
-      <a class="section-title" href="education.html">
-        Education
-      </a>
-      <div class="section-image">
-        <img src="./images/imperial.jpg">
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-    </div>
 
-    <div class="section">
-      <a class="section-title" href="projects.html">
-        Projects
-      </a>
-      <div class="section-image">
-        <img src="./images/code.png">
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item is-active">
+            Home
+          </a>
+
+          <a class="navbar-item">
+            About Me
+          </a>
+
+          <a class="navbar-item">
+            Projects
+          </a>
+
+          <a class="navbar-item">
+            Work Experience
+          </a>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button secondary-colour no-border">
+                  <strong>Contact Me</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <section class="hero is-fullheight-with-navbar no-padding">
+      <div class="hero-body columns is-gapless main-colour no-padding is-vcentered">
+        <div class="container column text-center">
+          <h1 class="title">
+            Ellie Cherrill
+          </h1>
+          <h2 class="subtitle">
+            A final year Computing student.
+          </h2>
+        </div>
+        <div class="container column">
+          <img src="./images/laptop.jpg">
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
-      <a class="section-title" href="work-experience.html">
-        Work Experience
-      </a>
-      <div class="section-image">
-        <img src="./images/work_experience.jpeg">
+    <section class="hero is-fullheight secondary-colour">
+      <div class="container">
+        <div class="title-padding">
+          <h1 class="title">
+            About Me
+          </h1>
+          <h2 class="subtitle">
+            {To do}
+          </h2>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- <div class="section">
-      <div class="section-title">
-        Section 4
+    <section class="hero is-fullheight main-colour">
+      <div class="container">
+        <div class="title-padding">
+          <h1 class="title">
+            Projects
+          </h1>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <p class="title">
+                  Zenith
+                </p>
+                <p class="subtitle">
+                  A mobile app in collobaration with the Royal College of Art to enable career changes.
+                </p>
+                <div class="tags">
+                  <span class="tag is-rounded">Android</span>
+                  <span class="tag is-rounded">Java</span>
+                  <span class="tag is-rounded">PostgreSQL</span>
+                  <span class="tag is-rounded">CI/CD</span>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  June 2019
+                </p>
+              </footer>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <p class="title">
+                  WACC
+                </p>
+                <p class="subtitle">
+                  A compiler (including parsing, syntactic and semantic error checking, code generation and optimisation).
+                </p>
+                <div class="tags">
+                  <span class="tag is-rounded">Java</span>
+                  <span class="tag is-rounded">CI/CD</span>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  March 2019
+                </p>
+              </footer>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <p class="title">
+                  PintOS
+                </p>
+                <p class="subtitle">
+                  An operating system with scheduling, demand paging and concurrency.
+                </p>
+                <div class="tags">
+                  <span class="tag is-rounded">C</span>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  December 2018
+                </p>
+              </footer>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <p class="title">
+                  T++
+                </p>
+                <p class="subtitle">
+                  A tea making machine made from a Raspberry Pi.
+                </p>
+                <div class="tags">
+                  <span class="tag is-rounded">C</span>
+                  <span class="tag is-rounded">x86 Assembly</span>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  June 2018
+                </p>
+              </footer>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="section-image">
-        <img src="work_experience.jpeg">
+
+    </section>
+
+    <section class="hero is-fullheight secondary-colour">
+      <div class="container">
+        <div class="title-padding">
+          <h1 class="title">
+            Work Experience
+          </h1>
+          <h2 class="subtitle">
+            {To do}
+          </h2>
+        </div>
       </div>
-    </div> -->
-  </div>
+    </section>
 
-</body>
+    <section class="hero is-fullheight main-colour">
+      <div class="container">
+        <div class="title-padding text-center">
+          <h1 class="title">
+            Contact Me
+          </h1>
+        </div>
+        <div class="columns column-padding">
+            <div class="column is-1">
+              <figure class="image is-32x32">
+                <img src="./images/linkedin.png">
+              </figure>
+            </div>
+            <div class="column">
+              <a href="https://uk.linkedin.com/in/ellie-cherrill-63b329169" class="link-colour"> Ellie Cherrill </a>
+            </div>
+            <div class="column is-1">
+              <figure class="image is-32x32">
+                <img src="./images/github.png">
+              </figure>
+            </div>
+            <div class="column">
+              <a href="https://github.com/elliecherrill" class="link-colour"> elliecherrill </a>
+            </div>
+            <div class="column is-1">
+              <figure class="image is-32x32">
+                <img src="./images/email.png">
+              </figure>
+            </div>
+            <div class="column">
+              <a href="mailto: ellie.cherrill@outlook.com" class="link-colour"> ellie.cherrill@outlook.com </a>
+            </div>
+        </div>
+      </div>
+    </section>
 
+  </body>
 </html>
